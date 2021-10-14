@@ -58,7 +58,7 @@
     </script>
 
 
-    <!-- Google Fonts Apis -->
+    <!-- Google Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap"
@@ -68,30 +68,89 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/39763e8ea8.js" crossorigin="anonymous"></script>
     <title>Paulo Omega | Full-Stack Developer</title>
-    <link rel="shortcut icon" href="./frontend/static/img/omega-paulo-logo.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="./src/img/omega-paulo-logo.svg" type="image/x-icon" />
     <link rel="stylesheet" href="/src/main.scss">
     <script type="module" src="/src/main.ts"></script>
   </head>
 
-  <body>
+  <body id="page--top">
     <header class="header">
-      <a href="/" id="home" class="logo nav__link" data-link>
-        <img data-link src="./img/omega-paulo-logo.svg" alt="Omega Paulo Logo" />
+      <a href="/" class="logo nav__link" data-link>
+        <img data-link src="./src/img/omega-paulo-logo.svg" alt="Omega Paulo Logo" />
         <title>logo</title>
       </a>
       <nav>
-        <a href="/about" id="about" class="nav__link" data-link>About</a>
-        <a href="/experience" id="experience" class="nav__link" data-link>Experience</a>
-        <a href="/work" id="work" class="nav__link" data-link>Work</a>
-        <a href="/contact" id="contact" class="nav__link" data-link>Contact</a>
-        <a href="./frontend/static/img/resume.pdf" target="_blank">Resume</a>
+        <a href="#about" class="nav__link" data-link>About</a>
+        <a href="#experience" class="nav__link" data-link>Experience</a>
+        <a href="#work" class="nav__link" data-link>Work</a>
+        <a href="#contact" class="nav__link contact" data-link>Contact</a>
+        <a href="./frontend/static/img/resume.pdf" class="hidden" target="_blank">Resume</a>
       </nav>
       <div class="ham__box">
         <div class="ham__box--inner"></div>
       </div>
     </header>
 
-    <h1>In development</h1>
+    <main>
+      <section id="home" class="home">
+        <div class="blur"></div>
+        <div class="content">
+          <p>Hi, my name is</p>
+          <h2 class="name">Paulo Omega.</h2>
+          <h3>I build things that lives on the web.</h3>
+          <div class="content--info">
+            <p>
+              I am a developer specializing in building (and occasionally designing) exceptional
+              full-stack web applications and anything in
+              between.
+            </p>
+          </div>
+        </div>
+
+        <div class="social--media">
+          <a href="https://github.com/omegapaulo" crossorigin="anonymous" target="_blank"
+            aria-label="Link to social media"><i class="fab fa-github-square"></i></a>
+          <a href="https://www.linkedin.com/in/paulo-omega-4899ab171/" crossorigin="anonymous" target="_blank"
+            aria-label="Link to social media"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com/omegapaulo_" crossorigin="anonymous" target="_blank"
+            aria-label="Link to social media"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://www.instagram.com/omegapaulo/" crossorigin="anonymous" target="_blank"
+            aria-label="Link to social media"><i class="fab fa-instagram-square"></i></a>
+          <div class="line--up"></div>
+        </div>
+
+      </section>
+
+      <section id="about" class="about">
+        <h1>This is the about section</h1>
+      </section>
+      <section id="experience" class="experience">
+        <h1>This is the experience section</h1>
+      </section>
+      <section id="work" class="work">
+        <h1>This is the work section</h1>
+      </section>
+      <section id="contact" class="contact">
+        <h1>This is the contact section</h1>
+      </section>
+    </main>
+
+    <footer>
+      <h1>This is the footer</h1>
+      <div class="social--media">
+        <a href="https://github.com/omegapaulo" crossorigin="anonymous" target="_blank"
+          aria-label="Link to social media"><i class="fab fa-github-square"></i></a>
+        <a href="https://www.linkedin.com/in/paulo-omega-4899ab171/" crossorigin="anonymous" target="_blank"
+          aria-label="Link to social media"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/omegapaulo_" crossorigin="anonymous" target="_blank"
+          aria-label="Link to social media"><i class="fab fa-twitter-square"></i></a>
+        <a href="https://www.instagram.com/omegapaulo/" crossorigin="anonymous" target="_blank"
+          aria-label="Link to social media"><i class="fab fa-instagram-square"></i></a>
+        <div class="line--up"></div>
+      </div>
+    </footer>
+
+
 
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WD88PPJ" height="0" width="0"
