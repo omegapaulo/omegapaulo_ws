@@ -4,7 +4,6 @@
   "description": "A simple website portfolio",
   "main": "main.js",
   "dependencies": {
-    "netlify-plugin-a11y": "0.0.12",
     "sass": "^1.42.1"
   },
   "devDependencies": {
