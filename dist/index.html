@@ -254,7 +254,7 @@
           I’m currently looking for new opportunities, my inbox is always open. Whether you have a question or
           proposal, or just want to say hello.
         </h2>
-        <form name="contact" method="POST" data-netlify="true">
+        <form method="POST" data-netlify="true">
           <div class="name--email">
             <div class="full__name contacts">
               <label for="full__name"></label>
@@ -268,6 +268,11 @@
           <div class="message contacts">
             <label for="message"></label>
             <input type="text" name="message" id="message" placeholder="Message" required>
+          </div>
+          <div>
+            <div data-netlify-recaptcha="true">
+             
+            </div>
           </div>
           <button type="submit">Shoot</button>
         </form>
