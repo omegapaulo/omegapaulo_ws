@@ -7,13 +7,12 @@
     "sass": "^1.42.1"
   },
   "devDependencies": {
-    "typescript": "^4.3.2",
     "vite": "^2.6.4"
   },
   "scripts": {
     "test": "jest",
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "serve": "vite preview"
   },
   "repository": {
@@ -24,7 +23,6 @@
     "js",
     "ts",
     "javascript",
-    "typescript",
     "scss",
     "css",
     "html5"
