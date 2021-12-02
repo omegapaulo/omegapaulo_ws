@@ -6,5 +6,5 @@ menu.addEventListener('click', () => {
 
 let scroll = new SmoothScroll('a[href*="#"]', {
   speed: 700,
-  // offset: 90,
+  offset: 100,
 });
