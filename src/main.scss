@@ -113,6 +113,7 @@ body {
     box-shadow: var(--shadow);
     flex-direction: column;
     padding-top: 15rem;
+    z-index: 99;
     transform: translateX(400px);
     transition: transform 0.5s ease-in-out;
 
@@ -141,6 +142,28 @@ body {
 
   nav.toggle-entrance {
     transform: translateX(0);
+    // z-index: 99;
+  }
+
+  .home {
+    background-image: url(./img/bg-omega.jpg);
+    height: 100vh;
+    background-color: var(--accent-color);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -650px;
+    position: relative;
+
+    .cover__blur {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.87);
+    }
   }
 }
 
