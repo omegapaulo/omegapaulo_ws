@@ -78,6 +78,7 @@ body {
       justify-content: center;
 
       .ham__box--inner {
+        transition: all 0.4s ease;
         position: relative;
         display: flex;
         align-items: center;
@@ -119,12 +120,13 @@ body {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: -1000px; /* -500px away fom the screen */
+    left: -500px; /* -500px away fom the screen */
     width: 75%;
     background-color: var(--dark-navy-transparent);
     display: flex;
     align-items: center;
     flex-direction: column;
+    transition: all 0.4s ease;
     padding-top: 10rem;
     z-index: 100;
 
@@ -134,6 +136,10 @@ body {
       font-size: 2rem;
       margin: 1rem 0;
     }
+  }
+
+  .insideout {
+    left: 0;
   }
 
   main {
