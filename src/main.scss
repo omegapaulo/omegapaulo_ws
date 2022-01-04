@@ -56,9 +56,25 @@ body {
     width: 40px;
   }
 
+  .btn {
+    margin-top: 4rem;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+
+    a {
+      color: var(--accent-color);
+      font-size: 1.6rem;
+    }
+  }
+
   .header {
     grid-area: header;
-    height: 70px;
+    height: 90px;
     top: 0;
     left: 0;
     right: 0;
@@ -66,12 +82,12 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: var(--dark-navy);
-    padding: 0 1.4rem 0 1.2rem;
+    padding: 0 2rem 0 1.2rem;
     position: sticky;
     z-index: 1000;
 
     .ham__box {
-      width: 40px;
+      width: 35px;
       height: 40px;
       display: flex;
       align-items: center;
@@ -95,24 +111,24 @@ body {
         width: inherit;
         background-color: var(--accent-color);
         position: absolute;
-        top: -7px;
+        top: -8px;
       }
 
       .ham__box--inner::after {
-        top: 7px;
+        top: 8px;
       }
-    }
 
-    .ham__box--inner.active {
-      transform: rotate(135deg);
-      background-color: var(--reddish);
-    }
+      .ham__box--inner.active {
+        transform: rotate(135deg);
+        background-color: var(--reddish);
+      }
 
-    .ham__box--inner.active::before,
-    .ham__box--inner.active::after {
-      top: 0;
-      background-color: var(--reddish);
-      transform: rotate(90deg);
+      .ham__box--inner.active::before,
+      .ham__box--inner.active::after {
+        top: 0;
+        background-color: var(--reddish);
+        transform: rotate(90deg);
+      }
     }
   }
 
@@ -120,7 +136,7 @@ body {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: -500px; /* -500px away fom the screen */
+    left: -5000px; /* -500px away fom the screen */
     width: 75%;
     background-color: var(--dark-navy-transparent);
     display: flex;
@@ -135,6 +151,11 @@ body {
       font-family: var(--font-family-head);
       font-size: 2rem;
       margin: 1rem 0;
+    }
+
+    a:last-child {
+      color: var(--accent-color);
+      padding: 0.5rem 1.5rem;
     }
   }
 
@@ -176,19 +197,19 @@ body {
           margin-bottom: 1rem;
         }
 
-        .btn.mobile {
-          margin-top: 4rem;
-          padding: 1rem 1.5rem;
-          font-weight: bold;
-          background-color: transparent;
-          border: 1px solid var(--accent-color);
-          border-radius: 3px;
+        // .btn.mobile {
+        //   margin-top: 4rem;
+        //   padding: 1rem 1.5rem;
+        //   font-weight: bold;
+        //   background-color: transparent;
+        //   border: 1px solid var(--accent-color);
+        //   border-radius: 3px;
 
-          a {
-            color: var(--accent-color);
-            font-size: 1.6rem;
-          }
-        }
+        //   a {
+        //     color: var(--accent-color);
+        //     font-size: 1.6rem;
+        //   }
+        // }
       }
     }
 
@@ -219,43 +240,35 @@ body {
         p {
           margin: 1.2rem 0;
         }
+      }
 
-        h2 {
-          font-family: var(--font-family-head);
-          margin-bottom: 2.3rem;
-          text-align: center;
-        }
+      h2 {
+        font-family: var(--font-family-head);
+        margin-bottom: 4rem;
+        text-align: center;
       }
 
       .tools {
         display: flex;
         flex-direction: column;
-        // align-items: center;
         justify-content: center;
-        // gap: 2rem;
         margin-top: 10rem;
         line-height: 2rem;
         font-size: 1.7rem;
         letter-spacing: 0.5px;
         font-family: var(--font-family);
 
-        h2.daily__tools {
-          font-family: var(--font-family-head);
-          margin-bottom: 2.3rem;
-        }
-
         .tools__info {
-          display: grid;
+          display: flex;
           align-items: center;
-          grid-template-rows: repeat(3, 1fr);
-          grid-template-areas: 'frontend' 'softskills' 'backend';
+          flex-direction: column;
           justify-content: center;
           text-align: center;
-          font-size: 1.5rem;
+          // font-size: 1.5rem;
           font-family: var(--font-family);
           color: var(--lightest-slate);
-          padding: 1rem;
-          // gap: 1rem;
+          row-gap: 2rem;
+
           i {
             font-size: 2rem;
           }
@@ -270,44 +283,23 @@ body {
           h4 {
             margin-bottom: 1rem;
           }
-          .frontend {
-            grid-area: frontend;
-            background-color: var(--navy);
-            border-radius: 3px;
-            padding: 1.5rem 1.2rem;
-            color: var(--white);
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-align: center;
-            font-family: var(--font-family);
-          }
 
-          .soft__skills {
-            grid-area: softskills;
-            background-color: var(--navy);
-            border-radius: 3px;
-            padding: 1.5rem 1.2rem;
-            color: var(--white);
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-align: center;
-            font-family: var(--font-family);
-          }
-
+          .frontend,
+          .soft__skills,
           .backend {
-            grid-area: backend;
             background-color: var(--navy);
             border-radius: 3px;
-            padding: 1.5rem 1.2rem;
+            padding: 1rem;
             color: var(--white);
             font-size: 1.5rem;
             font-weight: bold;
             text-align: center;
             font-family: var(--font-family);
-          }
+            width: 100%;
 
-          img {
-            width: 40px;
+            img {
+              width: 50px;
+            }
           }
         }
       }
@@ -376,19 +368,20 @@ body {
 
   footer {
     grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
     background-color: var(--dark-navy);
     color: var(--accent-color);
-    padding: 1rem;
     font-size: 1.6rem;
-
-    p {
-      margin-top: 1rem;
-    }
+    padding: 2rem 0;
 
     a {
-      margin: 0 0.3rem;
+      margin: 0 0.5rem;
       color: var(--lightest-slate);
-      font-size: 2.4rem;
+      font-size: 2.5rem;
     }
   }
 }
