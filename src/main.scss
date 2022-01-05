@@ -386,49 +386,84 @@ body {
   }
 }
 
-// @media screen and (max-width: 576px) {
-//   body {
-//     .header {
-//       background-color: yellow;
-//       .logo {
-//         width: 10px;
-//       }
-//     }
-//   }
-// }
+@media screen and (min-width: 768px) {
+  body {
+    .header {
+      background-color: green;
+      .logo {
+        width: 10px;
+      }
+    }
 
-// @media screen and (min-width: 577px) and (max-width: 767px) {
-//   body {
-//     .header {
-//       background-color: green;
-//       .logo {
-//         width: 10px;
-//       }
-//     }
-//   }
-// }
+    main {
+      .about {
+        .about__info {
+          text-align: center;
+          font-size: 2rem;
+          line-height: 2.7rem;
 
-// @media screen and (min-width: 768px) and (max-width: 991px) {
-//   body {
-//     .header {
-//       background-color: pink;
-//       .logo {
-//         width: 10px;
-//       }
-//     }
-//   }
-// }
+          p {
+            width: 85%;
+            margin: 0 auto;
+          }
+        }
 
-// @media screen and (min-width: 992px) and (max-width: 1199px) {
-//   body {
-//     .header {
-//       background-color: cyan;
-//       .logo {
-//         width: 10px;
-//       }
-//     }
-//   }
-// }
+        .tools {
+          .tools__info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 2rem;
+
+            .frontend,
+            .backend,
+            .soft__skills {
+              font-size: 2rem;
+            }
+
+            .frontend {
+              grid-column: 1/2;
+            }
+
+            .backend {
+              grid-column: 2/3;
+            }
+
+            .soft__skills {
+              grid-row: 2/3;
+              grid-column: span 2;
+            }
+          }
+        }
+      }
+      .contact {
+        margin-top: 5.5rem;
+        h2 {
+          width: 85%;
+          margin: auto;
+        }
+
+        form {
+          & > div {
+            width: 60%;
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    .header {
+      background-color: cyan;
+      .logo {
+        width: 10px;
+      }
+    }
+  }
+}
 
 // @media screen and (min-width: 1200px) and (max-width: 1399px) {
 //   body {
