@@ -323,6 +323,10 @@ body {
         margin-top: 2.5rem;
       }
 
+      div {
+        background-color: var(--light-navy);
+      }
+
       form {
         margin-top: 5rem;
         padding: 2.3rem;
@@ -349,7 +353,9 @@ body {
 
         input:hover,
         input:focus,
-        input:active {
+        input:active,
+        input:focus-within,
+        input:visited {
           background-color: var(--light-navy);
           outline: none;
         }
@@ -361,7 +367,6 @@ body {
         }
 
         .message input {
-          background-color: var(--light-navy);
           margin-bottom: 5rem;
           width: 100%;
         }
