@@ -328,11 +328,12 @@ body {
         padding: 2.3rem;
 
         .recaptcha {
-          width: 100%;
+          width: 80%;
           display: flex;
           justify-content: center;
           align-items: center;
           margin-bottom: 1rem;
+          background-color: transparent;
         }
 
         input {
@@ -340,14 +341,16 @@ body {
           height: 30px;
           border: none;
           border-bottom: 2px solid var(--accent-color);
-          background-color: transparent;
+          background-color: var(--light-navy);
           text-align: center;
           width: 100%;
+          color: var(--white);
         }
 
         input:hover,
         input:focus,
         input:active {
+          background-color: var(--light-navy);
           outline: none;
         }
 
@@ -358,6 +361,7 @@ body {
         }
 
         .message input {
+          background-color: var(--light-navy);
           margin-bottom: 5rem;
           width: 100%;
         }
